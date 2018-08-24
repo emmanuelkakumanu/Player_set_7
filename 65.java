@@ -12,10 +12,20 @@ class Ideone
 		int a[]=new int[n];
 		for(int i=0;i<n;i++)
 		a[i]=s.nextInt();
-		
-		if(a[0]<n)
-		System.out.print(a[0]);
-		for(int i=1;a[i]<n;i++)
-		System.out.print(" "+a[i]);
+		int f=0,j=0;
+		int c[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+			if(a[i]<n)
+			{
+			c[j++]=a[i];f=1;
+			}
+		}
+		if(f==1)
+		{
+			System.out.print(c[0]);
+			for(int i=1;i<j;i++)
+			System.out.print(" "+c[i]);
+		}
 	}
 }
