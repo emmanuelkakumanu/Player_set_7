@@ -9,7 +9,7 @@ class Ideone
 	{
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
-		for(int i=1;i<n;i++)
+		for(int i=1;i<=n;i++)
 		{
 			if(n%i==0)
 			{
